@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.halfHourEnabled {
+    @apply bg-gray-200;
+    cursor: pointer;
+}
+
+.halfHourEnabled:hover:not(.selected) {
+    background-color: #D27D2D;
+}
+
+.halfHourDisabled {
+    background-color: red;
+    cursor: not-allowed;
+}
